@@ -5,6 +5,8 @@ import { Request, Response } from 'express';
 export class ForecastController {
   @Get('')
   public getForecastForLoggedUser(_: Request, res: Response): void {
+    // GET FORECAST DATA FROM WEATHER API
+    //
     res.send([
       {
         time: '2020-04-26T00:00:00+00:00',
